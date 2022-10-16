@@ -19,7 +19,6 @@ export default function Cesco() {
                     <li>Mr Brown Can Moo</li>
                 </ul>
             </main>
-
             <Footer />
         </div>
     )

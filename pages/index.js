@@ -16,30 +16,24 @@ export default function Home() {
 
       <main>
         <Header title="The Books I Read" />
-        <ul class={"customers"}>
-           <li class={"customer"}>
-               <div class={"row"}>
-                   <div class={"col-8"}>
+               <div className={"row customer"}>
+                   <div className={"col-8 col-sm-8 customer-image"}>
                        <a href={"cesco"}><img alt={"cesco"} src={"cesco.jpg"}/></a>
                    </div>
-                   <div class={"col-4"}>
+                   <div className={"col-4 col-sm-4"}>
                        <a href="cesco">Francesco</a><br/>
                        6 years old
                    </div>
                </div>
-           </li>
-           <li class={"customer"}>
-               <div class={"row"}>
-                   <div className={"col-8"}>
+               <div className={"row customer"}>
+                   <div className={"col-8 col-sm-8 customer-image"}>
                       <a href={"cenzo"}><img alt={"cenzo"} src={"cenzo.jpg"} /></a>
                    </div>
-                   <div className={"col-4"}>
+                   <div className={"col-4 col-sm-4"}>
                        <a href={"cenzo"}>Vincenzo</a><br/>
                        3 years old
                    </div>
                </div>
-           </li>
-        </ul>
       </main>
 
       <Footer />
