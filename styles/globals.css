@@ -33,3 +33,18 @@ code {
   justify-content: center;
   align-items: center;
 }
+
+.customer {
+  list-style: none;
+  padding: 5px;
+  margin-bottom: 5px;
+  min-height: 50px;
+  display:flex;
+  vertical-align: center;
+  width: 50%;
+  float: left;
+}
+
+.title a {
+  text-decoration: none;
+}
