@@ -8,6 +8,7 @@
     "export": "next export"
   },
   "dependencies": {
+    "bootstrap": "^5.2.2",
     "cypress": "^10.0.3",
     "firebase": "^9.12.1",
     "firebase-admin": "^11.1.0",

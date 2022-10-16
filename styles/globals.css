@@ -11,7 +11,7 @@ body {
 }
 
 main {
-  padding: 5rem 0;
+  padding: 3rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -34,6 +34,11 @@ code {
   align-items: center;
 }
 
+.customers {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 .customer {
   list-style: none;
   padding: 5px;
@@ -42,7 +47,11 @@ code {
   display:flex;
   vertical-align: center;
   width: 50%;
-  float: left;
+}
+
+.customer img {
+  width:100%;
+
 }
 
 .title a {
