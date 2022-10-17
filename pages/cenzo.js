@@ -24,10 +24,16 @@ export default function Cenzo() {
                         September 27, 2019
                     </div>
                 </div>
-                <div className={"row"}>
-                    <Book book={{title:'Camioncito Azul', image:'images/books/el-camioncito-azul.jpg'}} />
-                    <Book book={{title:'B Is For Brooklyn'}} />
-                </div>
+                <h1>Top Books Read</h1>
+                <h3>Inglish</h3>
+                <Book book={{title:'Advencture Of Biscuit', image:'images/books/el-camioncito-azul.jpg', timesRead: 11}} />
+                <Book book={{title:'B Is For Brooklyn', image:'images/books/b-is-for-brooklyn.jpg', timesRead: 10}} />
+                <Book book={{title:'Tractor', image:'images/books/tractor.jpg', timesRead: 10}} />
+
+                <h3>Spanish</h3>
+                <Book book={{title:'Camioncito Azul', image:'images/books/el-camioncito-azul.jpg', timesRead: 11}} />
+                <Book book={{title:'Oso Polar, Que Es Ese Ruido?', image:'images/books/oso-polar-que-es-ese-ruido.jpg', timesRead: 10}} />
+                <Book book={{title:'Buenas Noches Gorila', image:'images/books/buenas-noches-gorila.jpg', timesRead: 11}} />
             </main>
 
             <Footer />
