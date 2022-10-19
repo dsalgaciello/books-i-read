@@ -73,6 +73,8 @@ code {
 .top-books-read {
   border-bottom: 1px solid black;
   width: 100%;
+  background: #eaeaea;
+  margin-top: 20px;
 }
 
 .top-books-read-language {

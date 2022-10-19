@@ -3,7 +3,7 @@ export default function Profile({reader}) {
       <div className={"row"}>
           <div className={"col-5 col-sm-5 profile"}>
               <div className={"profile-image"}>
-                  <img src={"cenzo.jpg"} title={reader.name} alt={reader.name}/>
+                  <img src={reader.image} title={reader.name} alt={reader.name}/>
               </div>
           </div>
           <div className={"col-7 col-sm-7"}>

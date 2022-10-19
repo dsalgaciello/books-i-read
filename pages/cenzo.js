@@ -13,12 +13,12 @@ export default function Cenzo() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Header title="The Books I Read" />
-            <Profile reader={{name:'Vincenzo Salgacello', totalBooksRead: 100, totalUniqueBooksRead: 100, totalEnglishBooksRead: 100, totalSpanishBooksRead: 100}} />
+            <Profile reader={{name:'Vincenzo Salgaciello', image: 'cenzo.jpg', totalBooksRead: 100, totalUniqueBooksRead: 100, totalEnglishBooksRead: 100, totalSpanishBooksRead: 100}} />
             <Search />
             <h1 className={"top-books-read"}>Top Books Read</h1>
             <h3 className={"top-books-read-language"}>English</h3>
             <div className={"align-items-start"}>
-                <Book book={{title:'Advencture Of Biscuit', image:'images/books/el-camioncito-azul.jpg', timesRead: 11}} />
+                <Book book={{title:'Advencture Of Biscuit', image:'images/books/adventures-of-biscuit.jpg', timesRead: 11}} />
                 <Book book={{title:'B Is For Brooklyn', image:'images/books/b-is-for-brooklyn.jpg', timesRead: 10}} />
                 <Book book={{title:'Tractor', image:'images/books/tractor.jpg', timesRead: 10}} />
             </div>
