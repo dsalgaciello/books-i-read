@@ -11,7 +11,7 @@ export default function Collapsible(props) {
     return (
         <div className="collapsible">
             <div className="row header" {...getToggleProps()}>
-                <div class={"col-12 top-books-read-language"}>
+                <div className={"col-12 top-books-read-language"}>
                     <div className={"col-9"}>
                         <h3 >{props.language}</h3>
                     </div>

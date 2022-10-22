@@ -26,6 +26,7 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 600px;
 }
 
 .customers {
@@ -64,10 +65,10 @@ code {
   background: #fdfdfd;
 }
 
-.search {
-  padding: 0 10px;
-  margin: 0 10px;
+.row.search {
   display: flex;
+  max-width: 600px;
+  width: 100%;
 }
 
 .search .title {
@@ -115,7 +116,7 @@ code {
   justify-content: end;
 }
 
-.row.profile {
+.profile {
   border: 1px solid #eaeaea;
   border-radius: 4px;
   margin-bottom: 5px;
@@ -125,9 +126,44 @@ code {
   align-items: center;
   justify-content: center;
   padding-bottom: 5px;
+  max-width: 600px;
+  padding: 5px;
 }
 
 .profile .col-12 {
   display: flex;
   gap: 10px;
+}
+
+.add-book {
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  margin: 10px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.add-book .title {
+  border-bottom: 1px solid #eaeaea;
+  background: #eaeaea;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.add-book label {
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+.add-book input {
+  width: 100%;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  height: 40px;
+}
+
+.add-book input[type="button"] {
+  border: 1px solid orangered;
+  background-color: orangered;
+  color: white;
 }
