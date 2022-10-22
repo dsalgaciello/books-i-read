@@ -4,6 +4,7 @@ import Footer from '@components/Footer'
 import Profile from "@components/Profile";
 import Search from "@components/Search";
 import Collapsible from "@components/Collapse";
+import Book from "@components/Book";
 
 export default function Cesco() {
     const title = 'The Books I Read';
@@ -18,6 +19,9 @@ export default function Cesco() {
         {title:'Buenas Noches Gorila', image:'images/books/buenas-noches-gorila.jpg', timesRead: 21}
     ];
 
+    const englishBookItems = englishBooks.map((book, index) => <Book key={index} book={book}/>);
+    const spanishBookItems = spanishBooks.map((book, index) => <Book key={index} book={book}/>);
+
     return (
         <div className="container">
             <Head>
@@ -28,8 +32,8 @@ export default function Cesco() {
             <Profile reader={{name:'Francesco Salgaciello', image:'cesco.jpg', totalBooksRead: 1000, totalUniqueBooksRead: 1000, totalEnglishBooksRead: 1000, totalSpanishBooksRead: 1000}} />
             <Search />
             <h1 className={"top-books-read"}>Top Books Read</h1>
-            <Collapsible books={englishBooks} language={"English"} />
-            <Collapsible books={spanishBooks} language={"Spanish"} />
+            <Collapsible content={englishBookItems} title={"English"} />
+            <Collapsible content={spanishBookItems} title={"Spanish"} />
             <Footer />
         </div>
     )

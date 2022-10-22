@@ -1,7 +1,10 @@
 import AddBook from "@components/AddBook";
+import Collapsible from "@components/Collapse";
 
 export default function Profile({reader}) {
-  return (
+    const addBootItem =  <AddBook user={"cesco"}/>
+
+    return (
       <>
           <div className={"col-12 profile"}>
               <div className={"col-4 col-sm-4"}>
@@ -50,7 +53,7 @@ export default function Profile({reader}) {
                       </div>
                   </div>
           </div>
-          <AddBook user={"cesco"}/>
+          <Collapsible title="Add Book" content={addBootItem} />
       </>
-  )
+    )
 }

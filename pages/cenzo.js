@@ -19,6 +19,9 @@ export default function Cenzo() {
         {title:'Buenas Noches Gorila', image:'images/books/buenas-noches-gorila.jpg', timesRead: 11}
     ];
 
+    const englishBookItems = englishBooks.map((book, index) => <Book key={index} book={book}/>);
+    const spanishBookItems = spanishBooks.map((book, index) => <Book key={index} book={book}/>);
+
     return (
         <div className="container">
             <Head>
@@ -29,8 +32,8 @@ export default function Cenzo() {
             <Profile reader={{name:'Vincenzo Salgaciello', image: 'cenzo.jpg', totalBooksRead: 100, totalUniqueBooksRead: 100, totalEnglishBooksRead: 100, totalSpanishBooksRead: 100}} />
             <Search />
             <h1 className={"top-books-read"}>Top Books Read</h1>
-            <Collapsible books={englishBooks} language={"English"} />
-            <Collapsible books={spanishBooks} language={"Spanish"} />
+            <Collapsible content={englishBookItems} title={"English"} />
+            <Collapsible content={spanishBookItems} title={"Spanish"} />
             <Footer />
         </div>
     )

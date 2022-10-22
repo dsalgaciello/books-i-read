@@ -96,19 +96,35 @@ code {
   margin-top: 20px;
 }
 
-.top-books-read-language {
+.col-12.top-books-read-language {
   width: 100%;
   margin-top: 20px;
   margin-bottom: 10px;
   display: flex;
+  border-bottom: 1px solid red;
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0;
+
 }
 
-.top-books-read-language div {
-  border-bottom: 1px solid red;
+.top-books-read-language hr3 {
+  align-self: center;
+  width: 100%;
 }
+
+.top-books-read-language svg {
+  align-self: center;
+}
+
 
 .collapsible {
   width: 100%;
+}
+
+.collapsible > div {
+  padding-right: 0;
 }
 
 .collapsible .col-3 {
@@ -116,7 +132,7 @@ code {
   justify-content: end;
 }
 
-.profile {
+.col-12.profile {
   border: 1px solid #eaeaea;
   border-radius: 4px;
   margin-bottom: 5px;
@@ -125,9 +141,9 @@ code {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 5px;
   max-width: 600px;
   padding: 5px;
+  gap: 8px;
 }
 
 .profile .col-12 {
@@ -136,11 +152,11 @@ code {
 }
 
 .add-book {
-  border: 1px solid #eaeaea;
   border-radius: 4px;
   margin: 10px;
   max-width: 600px;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .add-book .title {
@@ -166,4 +182,11 @@ code {
   border: 1px solid orangered;
   background-color: orangered;
   color: white;
+}
+
+.row.header {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
