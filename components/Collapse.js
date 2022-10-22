@@ -10,17 +10,19 @@ export default function Collapsible(props) {
 
     return (
         <div className="collapsible">
-            <div className="row header top-books-read-language" {...getToggleProps()}>
-                <div className={"col-9"}>
-                    <h3 >{props.language}</h3>
-                </div>
-                <div className={"col-3"}>
-                {isExpanded ? (
-                    <ChevronDoubleDown />
-                ) : (
-                    <ChevronDoubleRight />
-                )}
+            <div className="row header" {...getToggleProps()}>
+                <div class={"col-12 top-books-read-language"}>
+                    <div className={"col-9"}>
+                        <h3 >{props.language}</h3>
                     </div>
+                    <div className={"col-3"}>
+                    {isExpanded ? (
+                        <ChevronDoubleDown />
+                    ) : (
+                        <ChevronDoubleRight />
+                    )}
+                    </div>
+                </div>
             </div>
             <div {...getCollapseProps()}>
                 <div className="content">

@@ -76,6 +76,17 @@ code {
   padding-bottom: 5px;
 }
 
+.search .col-12{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.search input {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #eaeaea;
+}
+
 .top-books-read {
   border-bottom: 1px solid black;
   width: 100%;
@@ -84,14 +95,23 @@ code {
 }
 
 .top-books-read-language {
-  border-bottom: 1px solid red;
   width: 100%;
   margin-top: 20px;
   margin-bottom: 10px;
+  display: flex;
+}
+
+.top-books-read-language div {
+  border-bottom: 1px solid red;
 }
 
 .collapsible {
   width: 100%;
+}
+
+.collapsible .col-3 {
+ display: flex;
+  justify-content: end;
 }
 
 .row.profile {

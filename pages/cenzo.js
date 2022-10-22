@@ -4,8 +4,21 @@ import Footer from '@components/Footer'
 import Book from '@components/Book'
 import Search from '@components/Search'
 import Profile from '@components/Profile'
+import Collapsible from "@components/Collapse";
 
 export default function Cenzo() {
+    const englishBooks = [
+        {title:'Advencture Of Biscuit', image:'images/books/adventures-of-biscuit.jpg', timesRead: 11},
+        {title:'B Is For Brooklyn', image:'images/books/b-is-for-brooklyn.jpg', timesRead: 10},
+        {title:'Tractor', image:'images/books/tractor.jpg', timesRead: 10}
+    ];
+
+    const spanishBooks = [
+        {title:'Camioncito Azul', image:'images/books/el-camioncito-azul.jpg', timesRead: 11},
+        {title:'Oso Polar, Que Es Ese Ruido?', image:'images/books/oso-polar-que-es-ese-ruido.jpg', timesRead: 10},
+        {title:'Buenas Noches Gorila', image:'images/books/buenas-noches-gorila.jpg', timesRead: 11}
+    ];
+
     return (
         <div className="container">
             <Head>
@@ -16,19 +29,8 @@ export default function Cenzo() {
             <Profile reader={{name:'Vincenzo Salgaciello', image: 'cenzo.jpg', totalBooksRead: 100, totalUniqueBooksRead: 100, totalEnglishBooksRead: 100, totalSpanishBooksRead: 100}} />
             <Search />
             <h1 className={"top-books-read"}>Top Books Read</h1>
-            <h3 className={"top-books-read-language"}>English</h3>
-            <div className={"align-items-start"}>
-                <Book book={{title:'Advencture Of Biscuit', image:'images/books/adventures-of-biscuit.jpg', timesRead: 11}} />
-                <Book book={{title:'B Is For Brooklyn', image:'images/books/b-is-for-brooklyn.jpg', timesRead: 10}} />
-                <Book book={{title:'Tractor', image:'images/books/tractor.jpg', timesRead: 10}} />
-            </div>
-            <h3 className={"top-books-read-language"}>Spanish</h3>
-            <div className={"align-items-start"}>
-                <Book book={{title:'Camioncito Azul', image:'images/books/el-camioncito-azul.jpg', timesRead: 11}} />
-                <Book book={{title:'Oso Polar, Que Es Ese Ruido?', image:'images/books/oso-polar-que-es-ese-ruido.jpg', timesRead: 10}} />
-                <Book book={{title:'Buenas Noches Gorila', image:'images/books/buenas-noches-gorila.jpg', timesRead: 11}} />
-            </div>
-
+            <Collapsible books={englishBooks} language={"English"} />
+            <Collapsible books={spanishBooks} language={"Spanish"} />
             <Footer />
         </div>
     )
