@@ -1,11 +1,29 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
+import Readers from '@components/Readers';
+
 import firebase from '../firebase/initFirebaase';
 
 firebase();
 
 export default function Home() {
+
+    const readers = [
+        {
+            name: 'Francesco Salgaciello',
+            link: 'cesco',
+            image: 'cesco.jpg',
+            age: '6 years old'
+        },
+        {
+            name: 'Vincenzo Salgaciello',
+            link: 'cenzo',
+            image: 'cenzo.jpg',
+            age: '3 years old'
+        }
+    ];
+
   return (
     <div className="container">
       <Head>
@@ -13,29 +31,8 @@ export default function Home() {
         <title>The Books I Read!</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main>
         <Header title="The Books I Read" />
-               <div className={"row customer"}>
-                   <div className={"col-8 col-sm-8 customer-image"}>
-                       <a href={"cesco"}><img alt={"cesco"} src={"cesco.jpg"}/></a>
-                   </div>
-                   <div className={"col-4 col-sm-4"}>
-                       <a href="cesco">Francesco</a><br/>
-                       6 years old
-                   </div>
-               </div>
-               <div className={"row customer"}>
-                   <div className={"col-8 col-sm-8 customer-image"}>
-                      <a href={"cenzo"}><img alt={"cenzo"} src={"cenzo.jpg"} /></a>
-                   </div>
-                   <div className={"col-4 col-sm-4"}>
-                       <a href={"cenzo"}>Vincenzo</a><br/>
-                       3 years old
-                   </div>
-               </div>
-      </main>
-
+        <Readers readers={readers} />
       <Footer />
     </div>
   )
